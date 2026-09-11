@@ -128,7 +128,7 @@
 			password: { type: "password", required: true }
 		},
 		label: function () {
-			return this.name || this.address || 'opc-da server';
+			return this.name || this.address || 'OPC DA Server';
 		},
 		oneditprepare: function () {
 			var self = this;
@@ -348,7 +348,7 @@
 			name: { value: "", required: true },
 		},
 		label: function () {
-			return this.name || 'opc-da group';
+			return this.name || 'OPC DA Group';
 		},
 		oneditprepare: function () {
 			var self = this;
@@ -531,6 +531,7 @@
 <script type="text/javascript">
 	RED.nodes.registerType('opc-da in', {
 		category: 'Industrial · OPC DA',
+		paletteLabel: 'OPC DA In',
 		defaults: {
 			group: { type: "opc-da group", required: true },
 			mode: { value: "single" },
@@ -554,7 +555,7 @@
 			if (groupNode) {
 				return (this.mode == 'single' ? this.item : null) || groupNode.label();
 			}
-			return 'opc-da in';
+			return 'OPC DA In';
 		},
 		labelStyle: function () {
 			return this.name ? "node_label_italic" : "";
@@ -659,6 +660,7 @@
 	/*
 	RED.nodes.registerType('opc-da out', {
 		category: 'Industrial · OPC DA',
+		paletteLabel: 'OPC DA Out',
 		defaults: {
 			group: { type: "opc-da group", required: true },
 			item: { value: "" },
@@ -678,7 +680,7 @@
 			if (groupNode) {
 				return this.item || groupNode.label();
 			}
-			return 'opc-da out';
+			return 'OPC DA Out';
 		},
 		labelStyle: function () {
 			return this.name ? "node_label_italic" : "";
