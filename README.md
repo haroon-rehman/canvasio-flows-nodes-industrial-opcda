@@ -1,3 +1,73 @@
+# OPC DA
+
+Canvas IO Workflows — maintained integration/fork of an independent Node-RED node package.
+
+## Canvas IO
+
+| | |
+|--|--|
+| Domain | Industrial / OPC DA |
+| Development status | Integrated in local harness (cio-wfs-dev) |
+| Palette category (operational) | `Canvas IO` |
+| Config nodes | remain `category: "config"` |
+| Local repository | `cio-wfs-nodes/cio-wfs-node-industrial-opcda` |
+| npm package name | `node-red-contrib-opc-da` (unchanged) |
+
+`cio-wfs-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
+
+This repository is a **Canvas IO-maintained integration/fork**. Protocol and node runtime logic originate from upstream; Canvas IO changes are limited to integration, presentation, and local development packaging.
+
+## Nodes
+
+### Operational (palette: Canvas IO)
+
+- `opc-da in`, `opc-da out`
+
+### Configuration
+
+- `opc-da server`, `opc-da group`
+
+## Development
+
+```powershell
+cd C:\GitHub\canvasio\cio-wfs-nodes\cio-wfs-node-industrial-opcda
+npm install
+```
+
+Local harness:
+
+```powershell
+cd C:\GitHub\canvasio\cio-wfs-dev
+npm install
+cd C:\GitHub\canvasio\cio-wfs-core
+node packages/node_modules/node-red/red.js --userDir C:\GitHub\canvasio\cio-wfs-dev
+```
+
+Open http://localhost:1880
+
+## Testing
+
+No automated test suite (`npm test` is a stub).
+
+## Upstream
+
+| | |
+|--|--|
+| Original package | `node-red-contrib-opc-da` |
+| Upstream project | https://github.com/st-one-io/node-red-contrib-opc-da |
+
+Canvas IO does not claim authorship of the original upstream implementation.
+
+## License
+
+Apache-2.0 — see ``LICENSE``.
+
+---
+
+## Upstream documentation
+
+The following sections retain useful upstream technical documentation (adapted only where needed).
+
 # node-red-contrib-opc-da
 
 node-red-contrib-opc-da is an OPC-DA compatible node for Node-RED that allow interaction with remote OPC-DA servers. Currently only reading and browsing operations are supported.

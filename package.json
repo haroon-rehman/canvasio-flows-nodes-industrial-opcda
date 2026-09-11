@@ -14,23 +14,27 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
-        "hardware",
-        "automation",
-        "opc",
-        "opc-da",
-        "data-access",
-        "dcom",
-        "dce-rpc",
-        "plc",
-        "node-red"
-    ],
+    "hardware",
+    "automation",
+    "opc",
+    "opc-da",
+    "data-access",
+    "dcom",
+    "dce-rpc",
+    "plc",
+    "node-red",
+    "canvasio"
+  ],
     "node-red": {
         "nodes": {
             "opc-da": "red/opc-da.js"
         }
     },
-    "author": "Smart-Tech Controle e Automação Ltda.",
+    "author": "Smart-Tech Controle e AutomaÃ§Ã£o Ltda.",
     "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
     "dependencies": {
         "node-opc-da": "^1.0.7"
     }

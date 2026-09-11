@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="OPC DA">
+  <rect width="40" height="40" rx="6" fill="#161616"/>
+  <rect x="7" y="10" width="12" height="20" rx="2" fill="none" stroke="#f2f2f2" stroke-width="2"/>
+  <rect x="21" y="10" width="12" height="20" rx="2" fill="none" stroke="#f2f2f2" stroke-width="2"/>
+  <path d="M19 16h2 M19 20h2 M19 24h2" stroke="#c62828" stroke-width="2" stroke-linecap="round"/>
+</svg>
