@@ -10,7 +10,7 @@ Canvas IO Workflows — maintained integration/fork of an independent Node-RED n
 | Development status | Integrated in local harness (canvasio-flows-dev) |
 | Palette category (operational) | `Canvas IO` |
 | Config nodes | remain `category: "config"` |
-| Local repository | `canvasio-flows-nodes/canvasio-flows-node-industrial-opcda` |
+| Local repository | `canvasio-flows-nodes/canvasio-flows-nodes-industrial-opcda` |
 | npm package name | `@canvasio/node-industrial-opcda` (`1.0.3-canvasio.1`); upstream `node-red-contrib-opc-da` `1.0.3` |
 
 `canvasio-flows-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
@@ -30,7 +30,7 @@ This repository is a **Canvas IO-maintained integration/fork**. Protocol and nod
 ## Development
 
 ```powershell
-cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-nodes\canvasio-flows-node-industrial-opcda
+cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-nodes\canvasio-flows-nodes-industrial-opcda
 npm install
 ```
 
